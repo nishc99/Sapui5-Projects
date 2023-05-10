@@ -1,0 +1,19 @@
+ <mvc:View controllerName="com.example.youtubeproject.controller.Captcha.Captcha"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:ca="com.example.youtubeproject.control">
+  <App id="idAppControl" >
+    <pages>
+      <Page title="{i18n>title}">
+        <content>
+          <ca:Captcha
+          heading="Captcha Generator" valid="onValid"
+          >
+
+          </ca:Captcha>
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>

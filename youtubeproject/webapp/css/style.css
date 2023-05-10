@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+
+#__captcha0 > div:nth-child(1) {
+    margin-left: 33px;
+    font-size: 21px;
+    font-weight: bold;
+}

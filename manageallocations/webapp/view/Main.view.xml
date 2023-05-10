@@ -1,0 +1,63 @@
+<mvc:View
+
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+ 
+	<HeaderContainer id="container2" scrollStep="200">
+		<content>
+        <l:VerticalLayout >
+        <ObjectStatus text="CYC1"/>
+        <ObjectStatus text="cycleq"/>
+        <ObjectStatus title="Ledger" text="OL"/>
+        <ObjectStatus title="Allocation Type" text="Overhead Allocation"/>
+        <ObjectStatus title="Actual/Plan" text="Plan"/>
+        </l:VerticalLayout>
+        <l:VerticalLayout >
+        <ObjectStatus title="Created By" text="John OverheadAccountant"/>
+        <ObjectStatus title="Valid From" text="01/01/2018"/>
+        </l:VerticalLayout >
+
+        <l:VerticalLayout >
+        <ObjectStatus title="Allocation  Status" />
+        <ObjectStatus text="Unlocked"/>
+        </l:VerticalLayout >
+
+        </content>
+
+        <content>
+        <Button text="Draft" />
+        <Button text="Run" />
+        <Button text="Check Cycle" />
+        <Button icon="sap-icon://overflow" />
+        </content>
+	</HeaderContainer>
+
+   <Panel>
+    	<IconTabBar
+		id="idIconTabBarInlineMode"
+		headerMode="Inline"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+				text="General Information"
+				key="info">
+				<Text text="Info content goes here ..." />
+			</IconTabFilter>
+			<IconTabFilter
+				text="Field Groups"
+				key="attachments">
+				<Text text="Attachments go here ..." />
+			</IconTabFilter>
+			<IconTabFilter
+				text="Segments"
+				key="notes">
+				<Text text="Notes go here ..." />
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+    </Panel>
+
+</mvc:View>

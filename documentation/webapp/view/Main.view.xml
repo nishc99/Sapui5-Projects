@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.example.documentation.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    
+    <Shell>
+    <App>
+      <pages>
+    <Page id="page" title="{i18n>Home Page}">
+    <content>
+    <mvc:XMLView viewName="com.example.documentation.view.HelloPanel"/>
+    <mvc:XMLView viewName="com.example.documentation.view.InvoiceList"/>
+
+        </content>
+    </Page>
+      </pages>
+      </App>
+      </Shell>
+      <Shell>
+	<App class="myAppDemoWT" id="app"/>
+</Shell>
+</mvc:View>

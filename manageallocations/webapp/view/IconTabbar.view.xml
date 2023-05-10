@@ -1,0 +1,71 @@
+<mvc:View controllerName="com.example.manageallocations.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    		
+		xmlns="sap.uxap"
+		xmlns:layout="sap.ui.layout"
+		xmlns:m="sap.m"
+	    height="100%">
+
+    <ObjectPageHeaderContent>
+    <content>
+        
+        
+			<layout:VerticalLayout>
+            
+				<m:ObjectStatus text="CYC1" />
+                <m:ObjectStatus text="cycleq" />
+				<m:ObjectStatus title="Ledger" text="OL"/>
+				<m:ObjectStatus title="Allocation Type" text="Overhead Allocation"/>
+				<m:ObjectStatus title="Actual/Plan" text="Plan"/>
+			</layout:VerticalLayout>
+            <layout:VerticalLayout>
+			<m:ObjectStatus title="Created By" text="John OverheadAccountant"/>
+            <m:ObjectStatus title="Valid From" text="01/01/2018"/>
+            </layout:VerticalLayout>
+
+			
+            <layout:VerticalLayout>
+            <m:ObjectAttribute title="Allocation  Status" />
+            <m:ObjectAttribute text="Unlocked"/>
+            </layout:VerticalLayout>
+            
+            </content>
+            <content>
+            <m:Button
+      text="Draft"/>
+      <m:Button
+      text="Run"/>
+      <m:Button
+      text="Check Cycle"/>
+      </content>
+    </ObjectPageHeaderContent>
+</mvc:View>
+
+
+
+
+
+
+
+
+<!-- <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<IconTabBar
+		id="idIconTabBarNoIcons"
+			<Text text="Attachments go here ..." />
+			</IconTabFilter>
+			<IconTabFilter text="Notes" key="notes">
+				expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter text="Info" key="info">
+				<Text text="Info content goes here ..." />
+			</IconTabFilter>
+			<IconTabFilter text="Attachments" key="attachments">
+			<Text text="Notes go here ..." />
+			</IconTabFilter>
+			<IconTabFilter text="People" key="people">
+				<Text text="People content goes here ..." />
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+</mvc:View> -->

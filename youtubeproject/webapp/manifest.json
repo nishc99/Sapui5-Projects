@@ -1,0 +1,222 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "com.example.youtubeproject",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.9.3",
+      "toolsId": "24686af1-e0d4-450b-8bb7-2dbc6d763408"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.111.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.example.youtubeproject.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ],
+      "js": [
+        {
+          "uri": "utils/libs/ScandIT.js",
+          "name":"ScandIT.js"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.example.youtubeproject.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteMain",
+          "pattern": ":?query:",
+          "target": [
+            "TargetMain"
+          ]
+        },
+        {
+          "name": "Countdown",
+          "pattern": "Countdown",
+          "target": [
+            "Countdown"
+          ]
+        },
+        {
+          "name": "Covid",
+          "pattern": "Covid",
+          "target": [
+            "Covid"
+          ]
+        },
+        {
+          "name": "List",
+          "pattern": "List",
+          "target": [
+            "List"
+          ]
+        },
+        {
+          "name": "Pie",
+          "pattern": "Pie",
+          "target": [
+            "Pie"
+          ]
+        },
+        {
+          "name": "Vacc",
+          "pattern": "Vacc",
+          "target": [
+            "Vacc"
+          ]
+        },
+        {
+          "name": "Portfolio",
+          "pattern": "Portfolio",
+          "target": [
+            "Portfolio"
+          ]
+        },
+        {
+          "name": "SalesOrder",
+          "pattern": "SalesOrder",
+          "target": [
+            "SalesOrder"
+          ]
+        },
+        {
+          "name": "Barcode",
+          "pattern": "Barcode",
+          "target": [
+            "Barcode"
+          ]
+        },
+        {
+          "name": "Cards",
+          "pattern": "Cards",
+          "target": [
+            "Cards"
+          ]
+        },
+        {
+          "name": "Captcha",
+          "pattern": "Captcha",
+          "target": [
+            "Captcha"
+          ]
+        }
+        
+      ],
+      "targets": {
+        "TargetMain": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Main",
+          "viewName": "Main"
+        },
+        "Countdown": {
+          "viewId": "Countdown",
+          "viewName": "Countdown"
+        },
+        "Covid": {
+          "viewId": "Covid.Covid",
+          "viewName": "Covid.Covid"
+        },
+        "List": {
+          "viewId": "Covid.List",
+          "viewName": "Covid.List"
+        },
+        "Pie": {
+          "viewId": "Covid.Pie",
+          "viewName": "Covid.Pie"
+        },
+        "Vacc": {
+          "viewId": "Vacc.Vacc",
+          "viewName": "Vacc.Vacc"
+        },
+        "Portfolio": {
+          "viewId": "Portfolio.Portfolio",
+          "viewName": "Portfolio.Portfolio"
+        },
+        "SalesOrder": {
+          "viewId": "SalesOrder.SalesOrder",
+          "viewName": "SalesOrder.SalesOrder"
+        },
+        "Barcode": {
+          "viewId": "BarcodeScanner.Barcode",
+          "viewName": "BarcodeScanner.Barcode"
+        },
+        "Cards": {
+          "viewId": "Cards.Cards",
+          "viewName": "Cards.Cards"
+        },
+        "Captcha": {
+          "viewId": "Captcha.Captcha",
+          "viewName": "Captcha.Captcha"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.example.youtubeproject.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

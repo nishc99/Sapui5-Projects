@@ -1,0 +1,17 @@
+#ap {
+    background-color: aqua;
+    font-size: medium;
+}
+.sapUiSizeCompact .sapMPanel .sapMPanelHdr {
+    line-height: 2rem;
+    height: 2rem;
+    background-color: blue;
+}
+#application-comexampleproject-display-component---Main--page-title-inner {
+    margin-left: 590px;
+}
+
+.sapUiSizeCompact .sapMTB.sapMTBHeader-CTX {
+    height: 2.75rem;
+    background-color: blue;
+}

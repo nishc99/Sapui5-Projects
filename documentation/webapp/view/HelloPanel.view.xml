@@ -1,0 +1,38 @@
+<mvc:View
+   controllerName="com.example.documentation.controller.HelloPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   expandable="{device>/system/phone}"
+		expanded="{= !${device>/system/phone} }">
+   <Panel
+      headerText="{i18n>Home Page Panel}"
+      class="sapUiResponsiveMargin"
+      width="auto" >
+      <content>
+      <Button
+         id="helloDialogButton1"
+         icon="sap-icon://world"
+         text="Routing"
+         press="onOpenNav"
+         class="sapUiSmallMarginEnd"/>
+      <Button
+         id="helloDialogButton"
+         icon="sap-icon://world"
+         text="{i18n>DialogButton}"
+         press=".onOpenDialog"
+         class="sapUiSmallMarginEnd"/>
+         <Button
+            text="{i18n>Popup button}"
+            icon="sap-icon://message-popup"
+            press=".onShowHello"
+            class="sapUiSmallMarginEnd"/>
+         <Input
+            value="{/recipient/name}"
+            valueLiveUpdate="true"
+            width="60%"/>
+         <FormattedText
+            htmlText=" {/recipient/name}"
+            class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+      </content>
+   </Panel>
+</mvc:View>

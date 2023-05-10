@@ -1,0 +1,43 @@
+<mvc:View controllerName="com.example.project.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell id="sh">
+
+    <App id="ap">
+      <pages>
+    <Page id="page" title="{i18n>Home Page}">
+    <content>
+               <Panel id="pn"
+                  headerText="Header"
+                  class="sapUiResponsiveMargin"
+							width="auto">
+
+        <content>
+        
+        <Button id="btn1"
+      text="Routing button"
+      press=".onRoute"/>
+      <Button id="btn2"
+      text="{i18n>showHelloButtonText}"
+      press=".onShowHello"
+      class="sapUiSmallMarginEnd"
+      />
+      
+   <Input id="inp1"
+      value="{/recipient/name}"
+      description="Hello {/recipient/name}"
+      valueLiveUpdate="true"
+      width="60%"/>
+        </content>
+        </Panel>
+            </content>
+            <content>
+						<mvc:XMLView viewName="com.example.project.view.HelloPanel"/>
+            <mvc:XMLView viewName="com.example.project.view.InvoiceList"/>
+					</content>
+    </Page>
+    </pages>
+   </App>
+   </Shell>
+
+</mvc:View>

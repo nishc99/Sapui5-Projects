@@ -1,0 +1,14 @@
+<mvc:View controllerName="com.example.youtubeproject.controller.SalesOrder.SalesOrder" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:l="sap.ui.layout"
+  >
+  <App id="idAppControl">
+    <pages>
+      <Page  title="SalesOrder Page">
+        <l:VerticalLayout id="main" width="100%">
+        </l:VerticalLayout>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>

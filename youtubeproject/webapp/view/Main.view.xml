@@ -1,0 +1,76 @@
+<mvc:View controllerName="com.example.youtubeproject.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:grid="sap.ui.layout.cssgrid"
+	xmlns:core="sap.ui.core">
+    <Page id="page" title="Youtube Sample Projects">
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Countdown Timer" 
+        press="countdown">
+        <TileContent>
+			<ImageContent src="sap-icon://fob-watch" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Covid" 
+        press="covid">
+        <TileContent>
+			<ImageContent src="sap-icon://accidental-leave" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Vaccination Tile" 
+        press="vacc">
+        <TileContent>
+			<ImageContent src="sap-icon://syringe" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Portfolio Tile" 
+        press="portfolio">
+        <TileContent>
+			<ImageContent src="sap-icon://customer" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Salesorder Tile" 
+        press="salesorder">
+        <TileContent>
+			<ImageContent src="sap-icon://crm-sales" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Barcode scanning Tile" 
+        press="barcode">
+        <TileContent>
+			<ImageContent src="sap-icon://bar-code" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Cards Tile" 
+        press="cards">
+        <TileContent>
+			<ImageContent src="sap-icon://business-card" />
+		</TileContent>
+        </GenericTile>
+
+        <GenericTile class="sapUiTinyMarginBegin 
+        sapUiTinyMarginTop tileLayout" header="Captcha Tile" 
+        press="captcha">
+        <TileContent>
+			<ImageContent src="sap-icon://numbered-text" />
+		</TileContent>
+        </GenericTile>
+
+
+
+    </Page>
+</mvc:View>
